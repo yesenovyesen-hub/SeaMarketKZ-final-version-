@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Контакты SeaMarket KZ — связь с сервисом, поддержка, доставка и обратная связь." />
+    <title>Контакты — SeaMarket KZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="index.html" class="brand" aria-label="SeaMarket KZ">
+            <span class="brand-mark">S</span>
+            <span class="brand-text">SeaMarket KZ</span>
+          </a>
+          <nav class="main-nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О нас</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contacts.html" class="active">Контакты</a>
+            <a href="orders.html">Мои заказы</a>
+          </nav>
+          <div class="header-actions">
+            <label class="header-search" aria-label="Поиск товара">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.8l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+              <input id="headerSearchInput" type="search" placeholder="Поиск" aria-label="Поиск товаров" />
+            </label>
+            <button class="icon-btn" id="favoritesButton" type="button" aria-label="Избранное">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35 10.55 20C5.4 15.36 2 12.28 2 8.5A4.5 4.5 0 016.5 4c1.74 0 3.41.81 4.5 2.09A6.12 6.12 0 0115.5 4 4.5 4.5 0 0120 8.5c0 3.78-3.4 6.86-8.55 11.5L12 21.35Z"/></svg>
+              <span class="badge" id="favoritesCount">0</span>
+            </button>
+            <button class="icon-btn cart-btn" id="cartButton" type="button" aria-label="Корзина">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h13.7l-1.4 7.2A2 2 0 0116.5 15H9.2a2 2 0 01-1.9-1.5L5.2 3H2V1h4.3l.5 2.5H21v2H7.2l.7 3.4H18v2H8.6L6.2 6z"/></svg>
+              <span class="badge" id="cartCount">0</span>
+            </button>
+            <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <aside class="mobile-menu" id="mobileMenu" aria-label="Мобильное меню">
+        <div class="mobile-menu-header">
+          <span>SeaMarket KZ</span>
+          <button class="close-menu" type="button" aria-label="Закрыть меню">×</button>
+        </div>
+        <nav>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="delivery.html">Доставка</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="contacts.html" class="active">Контакты</a>
+          <a href="orders.html">Мои заказы</a>
+        </nav>
+      </aside>
+
+      <div class="backdrop" id="backdrop"></div>
+
+      <main>
+        <section class="page-hero reveal">
+          <div class="container narrow">
+            <p class="eyebrow">Контакты</p>
+            <h1>Нужна помощь или есть вопрос по заказу?</h1>
+            <p>Свяжитесь с нами — мы поможем выбрать продукт, уточнить детали доставки и рассказать о вариантах заказа.</p>
+          </div>
+        </section>
+
+        <section class="contacts reveal">
+          <div class="container contact-grid">
+            <div>
+              <p class="eyebrow">Поддержка</p>
+              <h2>Обращайтесь в любое удобное время</h2>
+              <div class="contact-list">
+                <p><strong>Телефон:</strong> +7 (771) 123-45-67</p>
+                <p><strong>Email:</strong> hello@seamarket.kz</p>
+                <p><strong>Адрес:</strong> 010000, Алматы, ул. Морская, 18</p>
+                <p><strong>Часы работы:</strong> Пн–Вс, 09:00–21:00</p>
+                <p><strong>Социальные сети:</strong> Instagram / Telegram / VK</p>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <label>
+                <span>Имя</span>
+                <input type="text" name="contactName" placeholder="Ваше имя" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="contactEmail" placeholder="example@mail.com" required />
+              </label>
+              <label>
+                <span>Сообщение</span>
+                <textarea name="contactMessage" rows="4" placeholder="Напишите нам" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="faq reveal">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">FAQ</p>
+              <h2>Частые вопросы</h2>
+            </div>
+            <div class="faq-list">
+              <details open>
+                <summary>Как оформить заказ?</summary>
+                <p>Выберите товары в каталоге, добавьте в корзину и заполните форму оформления заказа.</p>
+              </details>
+              <details>
+                <summary>Куда можно писать вопросы?</summary>
+                <p>Вы можете написать нам в Telegram, Instagram или через форму обратной связи на странице.</p>
+              </details>
+              <details>
+                <summary>Как быстро ответят?</summary>
+                <p>Обычно ответ приходит в рабочее время в течение нескольких часов.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a href="index.html" class="brand footer-brand">
+              <span class="brand-mark">S</span>
+              <span class="brand-text">SeaMarket KZ</span>
+            </a>
+            <p>Всё морское — в одном месте с доставкой по Казахстану.</p>
+          </div>
+          <div>
+            <h3>Каталог</h3>
+            <ul>
+              <li><a href="catalog.html">Рыба</a></li>
+              <li><a href="catalog.html">Морепродукты</a></li>
+              <li><a href="catalog.html">Икра</a></li>
+              <li><a href="catalog.html">Готовая еда</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Покупателям</h3>
+            <ul>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="orders.html">Мои заказы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Контакты</h3>
+            <ul>
+              <li>+7 (771) 123-45-67</li>
+              <li>hello@seamarket.kz</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <span>© 2026 SeaMarket KZ</span>
+            <span>Политика конфиденциальности</span>
+            <span>Условия использования</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина">
+      <div class="drawer-header">
+        <h3>Корзина</h3>
+        <button type="button" class="drawer-close" id="closeCartBtn" aria-label="Закрыть корзину">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="drawer-footer">
+        <div class="drawer-total"><span>Итого</span><strong id="cartTotal">0 ₸</strong></div>
+        <button type="button" class="btn btn-primary" id="goToCheckoutBtn">Оформить заказ</button>
+      </div>
+    </aside>
+
+    <aside class="favorites-drawer" id="favoritesDrawer" aria-label="Избранное">
+      <div class="drawer-header">
+        <h3>Избранное</h3>
+        <button type="button" class="drawer-close" id="closeFavoritesBtn" aria-label="Закрыть избранное">×</button>
+      </div>
+      <div class="favorites-items" id="favoritesItems"></div>
+    </aside>
+
+    <div class="modal-backdrop hidden" id="productModal" aria-hidden="true">
+      <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" id="closeProductModal" aria-label="Закрыть окно">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>

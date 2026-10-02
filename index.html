@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SeaMarket KZ — морепродукты, рыба, готовая еда и товары для рыбалки с доставкой по Казахстану." />
+    <title>SeaMarket KZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a href="index.html" class="brand" aria-label="SeaMarket KZ">
+            <span class="brand-mark">S</span>
+            <span class="brand-text">SeaMarket KZ</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Основная навигация">
+            <a href="index.html" class="active">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="about.html">О нас</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="reviews.html">Отзывы</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="orders.html">Мои заказы</a>
+          </nav>
+
+          <div class="header-actions">
+            <label class="header-search" aria-label="Поиск товара">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.8l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+              <input id="headerSearchInput" type="search" placeholder="Поиск" aria-label="Поиск товаров" />
+            </label>
+
+            <button class="icon-btn" id="favoritesButton" type="button" aria-label="Избранное">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35 10.55 20C5.4 15.36 2 12.28 2 8.5A4.5 4.5 0 016.5 4c1.74 0 3.41.81 4.5 2.09A6.12 6.12 0 0115.5 4 4.5 4.5 0 0120 8.5c0 3.78-3.4 6.86-8.55 11.5L12 21.35Z"/></svg>
+              <span class="badge" id="favoritesCount">0</span>
+            </button>
+
+            <button class="icon-btn cart-btn" id="cartButton" type="button" aria-label="Корзина">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h13.7l-1.4 7.2A2 2 0 0116.5 15H9.2a2 2 0 01-1.9-1.5L5.2 3H2V1h4.3l.5 2.5H21v2H7.2l.7 3.4H18v2H8.6L6.2 6z"/></svg>
+              <span class="badge" id="cartCount">0</span>
+            </button>
+
+            <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <aside class="mobile-menu" id="mobileMenu" aria-label="Мобильное меню">
+        <div class="mobile-menu-header">
+          <span>SeaMarket KZ</span>
+          <button class="close-menu" type="button" aria-label="Закрыть меню">×</button>
+        </div>
+        <nav>
+          <a href="index.html" class="active">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="delivery.html">Доставка</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="contacts.html">Контакты</a>
+          <a href="orders.html">Мои заказы</a>
+        </nav>
+      </aside>
+
+      <div class="backdrop" id="backdrop"></div>
+
+      <main>
+        <section class="hero reveal" id="top-section">
+          <div class="container hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow">МОРСКИЕ ПРОДУКТЫ • ДОСТАВКА ПО КАЗАХСТАНУ</p>
+              <h1>Море ближе, чем кажется</h1>
+              <p class="hero-text">Заказывайте рыбу, морепродукты, икру, готовую морскую еду и товары для кухни в одном современном сервисе.</p>
+              <div class="hero-actions">
+                <a href="catalog.html" class="btn btn-primary">Перейти в каталог</a>
+                <a href="delivery.html" class="btn btn-secondary">Как это работает</a>
+              </div>
+              <ul class="hero-trust" aria-label="Преимущества сервиса">
+                <li>Свежие продукты</li>
+                <li>Холодовая доставка</li>
+                <li>Оплата онлайн</li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Морепродукты и рыба">
+              <div class="hero-visual-card">
+                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Качественная рыба и морепродукты" loading="eager" />
+              </div>
+              <div class="floating-card floating-card-one">
+                <span>Доставка 24/7</span>
+                <strong>2-4 часа</strong>
+              </div>
+              <div class="floating-card floating-card-two">
+                <span>Популярно</span>
+                <strong>Лосось • Креветки</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages reveal">
+          <div class="container">
+            <div class="section-heading align-center">
+              <p class="eyebrow">Почему SeaMarket KZ?</p>
+              <h2>Сервис для настоящих ценителей моря</h2>
+            </div>
+            <div class="advantage-grid">
+              <article class="advantage-item">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-4 0-8 3.1-8 7.2C4 16 12 22 12 22s8-6 8-12.8C20 5.1 16 2 12 2zm0 10.7a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4z"/></svg>
+                </div>
+                <h3>Свежие продукты</h3>
+                <p>Отбор по качеству, срокам поставки и режиму хранения.</p>
+              </article>
+              <article class="advantage-item">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a8 8 0 108 8h-2a6 6 0 11-6-6V2zm1 5h-2v5.3l4.4 2.7 1-1.7-3.4-2V7z"/></svg>
+                </div>
+                <h3>Холодовая доставка</h3>
+                <p>Сохранение температуры и свежести на каждом этапе пути.</p>
+              </article>
+              <article class="advantage-item">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v10H3zm2 2v6h14V9zm3-5h8v2H8V4z"/></svg>
+                </div>
+                <h3>Большой ассортимент</h3>
+                <p>Рыба, морепродукты, икра, готовые блюда и аксессуары.</p>
+              </article>
+              <article class="advantage-item">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zm2 2v10h12V7zm2 2h8v2H8zm0 4h5v2H8z"/></svg>
+                </div>
+                <h3>Удобная оплата</h3>
+                <p>Онлайн-платёж, счёт на телефон и понятные шаги оформления.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="categories reveal" id="categories">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Категории</p>
+              <h2>Выберите, что сегодня хочется приготовить</h2>
+            </div>
+            <div class="category-grid" id="categoryGrid"></div>
+          </div>
+        </section>
+
+        <section class="catalog reveal" id="catalog">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Каталог</p>
+              <h2>Наши самые свежие находки</h2>
+            </div>
+
+            <div class="catalog-controls">
+              <div class="catalog-toolbar">
+                <label class="search-box" aria-label="Поиск в каталоге">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.9 12.8l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+                  <input id="catalogSearch" type="search" placeholder="Поиск по товарам" aria-label="Поиск по товарам" />
+                </label>
+
+                <div class="filter-group" id="categoryFilters" aria-label="Фильтрация по категориям"></div>
+              </div>
+
+              <div class="catalog-meta">
+                <div class="results-summary">
+                  <span id="resultsCount">0 товаров</span>
+                </div>
+                <div class="sort-view-tools">
+                  <label>
+                    <span>Сортировка</span>
+                    <select id="sortSelect">
+                      <option value="featured">Популярное</option>
+                      <option value="price-asc">Цена: по возрастанию</option>
+                      <option value="price-desc">Цена: по убыванию</option>
+                      <option value="rating">Рейтинг</option>
+                    </select>
+                  </label>
+                  <div class="view-toggle" role="tablist" aria-label="Вид каталога">
+                    <button class="view-btn is-active" data-view="grid" type="button" aria-label="Сетка">Сетка</button>
+                    <button class="view-btn" data-view="list" type="button" aria-label="Список">Компактный список</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid" id="catalogGrid"></div>
+          </div>
+        </section>
+
+        <section class="bundle reveal" id="bundle">
+          <div class="container bundle-inner">
+            <div class="section-heading">
+              <p class="eyebrow">Подбери всё для блюда</p>
+              <h2>Готовые наборы для ужина</h2>
+            </div>
+            <div class="bundle-tabs" id="bundleTabs" aria-label="Наборы для блюда"></div>
+            <div class="bundle-panel" id="bundlePanel"></div>
+          </div>
+        </section>
+
+        <section class="checkout reveal" id="checkout">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Оформление заказа</p>
+              <h2>Оставьте заявку максимально быстро</h2>
+            </div>
+
+            <div class="checkout-layout">
+              <form id="checkoutForm" class="checkout-form" novalidate>
+                <div class="checkout-step is-active" data-step="1">
+                  <h3>Шаг 1. Контактные данные</h3>
+                  <div class="field-grid">
+                    <label>
+                      <span>Имя</span>
+                      <input type="text" name="firstName" placeholder="Ваше имя" required />
+                    </label>
+                    <label>
+                      <span>Телефон</span>
+                      <input type="tel" name="phone" placeholder="+7 777 123 45 67" required />
+                    </label>
+                    <label class="full-width">
+                      <span>Email</span>
+                      <input type="email" name="email" placeholder="name@example.com" required />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="checkout-step" data-step="2">
+                  <h3>Шаг 2. Доставка</h3>
+                  <div class="field-grid">
+                    <label>
+                      <span>Город</span>
+                      <select name="city" required>
+                        <option value="">Выберите город</option>
+                        <option>Астана</option>
+                        <option>Алматы</option>
+                        <option>Шымкент</option>
+                        <option>Караганда</option>
+                        <option>Актобе</option>
+                        <option>Павлодар</option>
+                        <option>Другие города</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Способ доставки</span>
+                      <select name="deliveryMethod" required>
+                        <option value="">Выберите способ</option>
+                        <option>Доставка курьером</option>
+                        <option>Самовывоз</option>
+                        <option>Доставка до двери</option>
+                      </select>
+                    </label>
+                    <label class="full-width">
+                      <span>Адрес</span>
+                      <textarea name="address" rows="3" placeholder="Улица, дом, квартира" required></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="checkout-step" data-step="3">
+                  <h3>Шаг 3. Оплата</h3>
+                  <div class="payment-methods">
+                    <label class="payment-option">
+                      <input type="radio" name="paymentMethod" value="card" checked />
+                      <span>Карта</span>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="paymentMethod" value="invoice" />
+                      <span>Счёт на телефон</span>
+                    </label>
+                    <label class="payment-option">
+                      <input type="radio" name="paymentMethod" value="cash" />
+                      <span>Наличными при получении</span>
+                    </label>
+                  </div>
+
+                  <div class="invoice-box hidden" id="invoiceBox">
+                    <label>
+                      <span>Номер телефона для счёта</span>
+                      <input type="tel" id="invoicePhone" placeholder="+7 XXX XXX XX XX" />
+                    </label>
+                    <p>Счёт будет отправлен на указанный номер телефона.</p>
+                    <button type="button" class="btn btn-secondary" id="createInvoiceButton">Получить счёт</button>
+                  </div>
+                </div>
+
+                <div class="checkout-actions">
+                  <button type="button" class="btn btn-secondary hidden" id="prevStepBtn">Назад</button>
+                  <button type="button" class="btn btn-primary" id="nextStepBtn">Далее</button>
+                  <button type="submit" class="btn btn-primary hidden" id="submitOrderBtn">Подтвердить заказ</button>
+                </div>
+              </form>
+
+              <aside class="checkout-summary">
+                <h3>Ваш заказ</h3>
+                <div class="summary-block">
+                  <div class="summary-row"><span>Товары</span><strong id="summaryProducts">0 ₸</strong></div>
+                  <div class="summary-row"><span>Доставка</span><strong id="summaryShipping">0 ₸</strong></div>
+                  <div class="summary-row"><span>Скидка</span><strong id="summaryDiscount">0 ₸</strong></div>
+                  <div class="summary-row total"><span>Итого</span><strong id="summaryTotal">0 ₸</strong></div>
+                </div>
+                <div class="promo-box">
+                  <label>
+                    <span>Промокод</span>
+                    <input id="promoCodeInput" type="text" placeholder="Введите промокод" />
+                  </label>
+                  <button type="button" class="btn btn-secondary" id="applyPromoBtn">Применить</button>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="orders reveal" id="orders">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Мои заказы</p>
+              <h2>История покупок</h2>
+            </div>
+            <div class="orders-list" id="ordersList"></div>
+          </div>
+        </section>
+
+        <section class="reviews reveal" id="reviews">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Отзывы</p>
+              <h2>Что говорят наши покупатели</h2>
+            </div>
+
+            <div class="review-prompt hidden" id="reviewPrompt">
+              <h3>Расскажите о первой покупке</h3>
+              <form id="reviewForm" novalidate>
+                <div class="field-grid">
+                  <label>
+                    <span>Оценка</span>
+                    <select name="rating" required>
+                      <option value="5">★★★★★ 5</option>
+                      <option value="4">★★★★☆ 4</option>
+                      <option value="3">★★★☆☆ 3</option>
+                      <option value="2">★★☆☆☆ 2</option>
+                      <option value="1">★☆☆☆☆ 1</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Имя</span>
+                    <input type="text" name="name" placeholder="Как вас зовут?" required />
+                  </label>
+                  <label>
+                    <span>Город</span>
+                    <input type="text" name="city" placeholder="Город" required />
+                  </label>
+                  <label class="full-width">
+                    <span>Текст отзыва</span>
+                    <textarea name="text" rows="4" placeholder="Расскажите, что вам понравилось" required></textarea>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Опубликовать отзыв</button>
+              </form>
+            </div>
+
+            <div class="reviews-list" id="reviewsList"></div>
+          </div>
+        </section>
+
+        <section class="delivery reveal" id="delivery">
+          <div class="container">
+            <div class="section-heading align-center">
+              <p class="eyebrow">Доставка</p>
+              <h2>Как сделать заказ быстрее и проще</h2>
+            </div>
+            <div class="delivery-flow">
+              <div class="flow-item">
+                <span class="flow-number">1</span>
+                <h3>Выберите товар</h3>
+              </div>
+              <div class="flow-item">
+                <span class="flow-number">2</span>
+                <h3>Оформите заказ</h3>
+              </div>
+              <div class="flow-item">
+                <span class="flow-number">3</span>
+                <h3>Получите счёт</h3>
+              </div>
+              <div class="flow-item">
+                <span class="flow-number">4</span>
+                <h3>Получите доставку</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq reveal" id="faq">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">FAQ</p>
+              <h2>Частые вопросы</h2>
+            </div>
+            <div class="faq-list">
+              <details open>
+                <summary>Как оформить заказ?</summary>
+                <p>Выберите товар, добавьте его в корзину, затем заполните форму оформления и выберите удобный способ оплаты.</p>
+              </details>
+              <details>
+                <summary>Как работает доставка?</summary>
+                <p>Мы доставляем по городам Казахстана с соблюдением холода и времени получения, чтобы продукты оставались свежими.</p>
+              </details>
+              <details>
+                <summary>Как сохраняется холодовая цепь?</summary>
+                <p>Для доставки используются изотермические контейнеры и таймеры контроля температуры на маршруте.</p>
+              </details>
+              <details>
+                <summary>Можно ли заказать замороженные продукты?</summary>
+                <p>Да, в каталоге есть замороженные позиции, которые хранятся и доставляются в условиях, соответствующих рекомендациям по заморозке.</p>
+              </details>
+              <details>
+                <summary>Как оплатить заказ?</summary>
+                <p>Можно оплатить банковской картой, через счёт на телефон или при получении в зависимости от вашего выбора.</p>
+              </details>
+              <details>
+                <summary>Как получить счёт на телефон?</summary>
+                <p>На шаге оплаты выберите вариант «Счёт на телефон», укажите номер и нажмите «Получить счёт».</p>
+              </details>
+              <details>
+                <summary>Можно ли оставить отзыв?</summary>
+                <p>Да, после первого оформленного заказа вы сможете оставить отзыв в форме на странице отзывов.</p>
+              </details>
+              <details>
+                <summary>Когда можно оставить отзыв?</summary>
+                <p>Отзывы доступны после первого оформленного заказа и проверки статуса вашего заказа.</p>
+              </details>
+              <details>
+                <summary>Можно ли отменить заказ?</summary>
+                <p>Да, если заказ ещё не передан в обработку, вы можете отменить его через историю заказов или по телефону поддержки.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="nutrition reveal">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Морепродукты и питание</p>
+              <h2>Что важно знать о йоде</h2>
+            </div>
+            <div class="nutrition-grid">
+              <div class="nutrition-card highlight">
+                <h3>Что важно знать о йоде?</h3>
+                <p>Морепродукты являются естественным источником йода. Умеренное включение рыбы и морской пищи в рацион поможет поддерживать разнообразное питание.</p>
+                <a href="https://www.who.int/news-room/fact-sheets/detail/iodine-deficiency" target="_blank" rel="noreferrer">Официальный источник</a>
+              </div>
+              <div class="nutrition-card">
+                <h3>Зачем это важно?</h3>
+                <p>Йод участвует в работе щитовидной железы и поддержании баланса обмена веществ.</p>
+              </div>
+              <div class="nutrition-card">
+                <h3>Наш подход</h3>
+                <p>Мы не обещаем чудо-эффектов: просто делаем акцент на полезных морепродуктах и качественных продуктах.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about reveal" id="about">
+          <div class="container about-grid">
+            <div class="about-copy">
+              <p class="eyebrow">О SeaMarket KZ</p>
+              <h2>Морской сервис для тех, кто выбирает качество и удобство</h2>
+              <p>SeaMarket KZ — это современный онлайн-сервис для тех, кто любит свежую рыбу, морепродукты, икру и готовые блюда с морской тематикой. Мы собрали всё в одном месте, чтобы вы могли быстро и удобно оформить заказ с доставкой по Казахстану.</p>
+              <p>Мы создавали сервис для тех, кто хочет не просто купить продукты, а почувствовать удобство: понятный каталог, прозрачную доставку, современные инструменты оформления и поддержку на каждом этапе.</p>
+              <ul class="principles">
+                <li><strong>Свежесть</strong> — строгий контроль качества и хранения.</li>
+                <li><strong>Прозрачность</strong> — понятные цены, статусы и процесс покупки.</li>
+                <li><strong>Удобство</strong> — быстрая навигация и современный интерфейс.</li>
+                <li><strong>Забота о клиенте</strong> — доставка с учётом потребностей и информации.</li>
+              </ul>
+            </div>
+            <div class="about-visual">
+              <img src="https://images.unsplash.com/photo-1544943910-4c1dc44aab44?auto=format&fit=crop&w=1000&q=80" alt="Морепродукты и рыба на столе" loading="lazy" />
+            </div>
+          </div>
+        </section>
+
+        <section class="cities reveal">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Где мы доставляем?</p>
+              <h2>Работаем по ключевым городам Казахстана</h2>
+            </div>
+            <div class="city-grid">
+              <article class="city-card">Астана</article>
+              <article class="city-card">Алматы</article>
+              <article class="city-card">Шымкент</article>
+              <article class="city-card">Караганда</article>
+              <article class="city-card">Актобе</article>
+              <article class="city-card">Павлодар</article>
+              <article class="city-card">Другие города</article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts reveal" id="contacts">
+          <div class="container contact-grid">
+            <div>
+              <p class="eyebrow">Контакты</p>
+              <h2>Свяжитесь с нами</h2>
+              <div class="contact-list">
+                <p><strong>Телефон:</strong> +7 (771) 123-45-67</p>
+                <p><strong>Email:</strong> hello@seamarket.kz</p>
+                <p><strong>Социальные сети:</strong> Instagram / Telegram / VK</p>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <label>
+                <span>Имя</span>
+                <input type="text" name="contactName" placeholder="Ваше имя" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="contactEmail" placeholder="example@mail.com" required />
+              </label>
+              <label>
+                <span>Сообщение</span>
+                <textarea name="contactMessage" rows="4" placeholder="Напишите нам" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a href="index.html" class="brand footer-brand">
+              <span class="brand-mark">S</span>
+              <span class="brand-text">SeaMarket KZ</span>
+            </a>
+            <p>Всё морское — в одном месте с доставкой по Казахстану.</p>
+          </div>
+          <div>
+            <h3>Каталог</h3>
+            <ul>
+              <li><a href="catalog.html">Рыба</a></li>
+              <li><a href="catalog.html">Морепродукты</a></li>
+              <li><a href="catalog.html">Икра</a></li>
+              <li><a href="catalog.html">Готовая еда</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Покупателям</h3>
+            <ul>
+              <li><a href="delivery.html">Доставка</a></li>
+              <li><a href="reviews.html">Отзывы</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="orders.html">Мои заказы</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Контакты</h3>
+            <ul>
+              <li>+7 (771) 123-45-67</li>
+              <li>hello@seamarket.kz</li>
+              <li>Instagram</li>
+              <li>Telegram</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <span>© 2026 SeaMarket KZ</span>
+            <span>Политика конфиденциальности</span>
+            <span>Условия использования</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина">
+      <div class="drawer-header">
+        <h3>Корзина</h3>
+        <button type="button" class="drawer-close" id="closeCartBtn" aria-label="Закрыть корзину">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="drawer-footer">
+        <div class="drawer-total">
+          <span>Итого</span>
+          <strong id="cartTotal">0 ₸</strong>
+        </div>
+        <button type="button" class="btn btn-primary" id="goToCheckoutBtn">Оформить заказ</button>
+      </div>
+    </aside>
+
+    <aside class="favorites-drawer" id="favoritesDrawer" aria-label="Избранное">
+      <div class="drawer-header">
+        <h3>Избранное</h3>
+        <button type="button" class="drawer-close" id="closeFavoritesBtn" aria-label="Закрыть избранное">×</button>
+      </div>
+      <div class="favorites-items" id="favoritesItems"></div>
+    </aside>
+
+    <div class="modal-backdrop hidden" id="productModal" aria-hidden="true">
+      <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" id="closeProductModal" aria-label="Закрыть окно">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
